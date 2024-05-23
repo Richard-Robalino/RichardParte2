@@ -29,3 +29,22 @@ class Hija extends Padre {
         System.out.println("Año: " + anio + " Parentesco: "+parentesco);
     }
 }
+
+class Nieta extends Hija {
+    int ci;
+    String colegio;
+    String geraquia;
+
+
+    public Nieta(String nombre, String apellido, String estado, int anio, String parentesco, int ci, String colegio, String geraquia) {
+        super(nombre, apellido, estado, anio, parentesco);
+        this.ci = ci;
+        this.colegio = colegio;
+        this.geraquia = geraquia;
+    }
+
+    public void imprimirdesde() {
+        super.imprimirde();
+        System.out.printf(" Ci: " + ci + " Colegio: " + colegio+" Jerarquia de hijo:"+geraquia);
+    }
+}
