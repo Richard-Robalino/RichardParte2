@@ -4,15 +4,15 @@ public class Main {
     int edad;
     String nombre;
     String apellido;
-    int anio;
-    public Main(int edad,String nombre,String apellido,int anio)
+    int fecha;
+    public Main(int edad,String nombre,String apellido,int fecha)
     {
         this.edad=edad;
         this.nombre=nombre;
         this.apellido=apellido;
-        this.anio=anio;
+        this.fecha=fecha;
     }
     public void imprimir(){
-        System.out.println("El nombre: "+nombre+" Apellido: "+apellido+edad+anio);
+        System.out.println("El nombre: "+nombre+" Apellido: "+apellido+edad+fecha);
     }
 }
